@@ -2,9 +2,6 @@
 
 # Comenzamos creando las variables que se crean necesarias
 
-
-Temperaturas = [14, 15, 17, 18, 13, 18, 18, 16, 22, 13, 17, 18, 12, 14, 13]
-
 Semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
 
 Meses = ["Enero", "Febrero", "Marzo", "Mayo", "Abril", "Julio", "Junio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
@@ -35,4 +32,21 @@ Diciembre = 30
 
 Inicio_Año = ( 1, "de", "Enero")
 
-for 
+# Primera parte del codigo: Creamos lo que sera el funcionamiento del menu.
+
+print("Bienvenido al registro de temperaturas")
+print()
+print("!RT!: Registrar temperatura semanal")
+print("!MJ!: Consultar temperatura media")
+print("!DF!: Consultar diferencia maxima")
+print("!FI!: Salir del programa")
+print()
+eleccion = str(input("Por favor selecciona una opcion >> "))
+
+if eleccion == RT: # Contenido de la opcion 1
+
+if eleccion == MJ: # Contenido de la opcion 2
+
+if eleccion == DF: # Contenido de la opcion 3 
+
+if eleccion == FI: # Contenido de la opcion 4
