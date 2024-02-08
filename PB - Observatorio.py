@@ -2,6 +2,7 @@
 
 # Comenzamos creando las variables que se crean necesarias
 
+
 Semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
 
 Meses = ["Enero", "Febrero", "Marzo", "Mayo", "Abril", "Julio", "Junio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
@@ -32,9 +33,17 @@ Diciembre = 30
 
 Inicio_Año = ( 1, "de", "Enero")
 
+
+
+
+
+
+
 # Primera parte del codigo: Creamos lo que sera el funcionamiento del menu.
 
 while True:
+    Temperatura_media = None
+    Diferencia_max = None
 
     print("Bienvenido al registro de temperaturas")
     print()
@@ -48,16 +57,40 @@ while True:
     eleccion = eleccion.lower() # Converitmos el string dado por el user a minusculas para que no sea keysensitive
 
     if eleccion == "rt": # Contenido de la opcion 1
-        print("Opcion seleccionada: RT")
-
+        Temperaturas = input("Escribe las temperaturas de esta semana: ")        
+        print()
+        print(Temperaturas)
+            
+            
+            
+            
+            
     elif eleccion == "mj": # Contenido de la opcion 2
-        print("Opcion seleccionada: MJ")
+    
+        if Temperatura_media is None:
+            print("No hay temperaturas registradas, por favor registrelas")
+
+
+
+
+
 
     elif eleccion == "df": # Contenido de la opcion 3 
-        print("Opcion seleccionada: DF")
+        if Diferencia_max is None:
+            print("No hay registros de temperatura")
+
+
+
+
+
 
     elif eleccion == "fi": # Contenido de la opcion 4
-        print("Opcion seleccionada: FI")
+        print("Saliendo del programa...")
+        
+        
+        
+        
+        
         
     else:
         print("Opcion no valida, por favor seleccione una opcion valida.")
