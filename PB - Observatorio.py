@@ -34,19 +34,32 @@ Inicio_Año = ( 1, "de", "Enero")
 
 # Primera parte del codigo: Creamos lo que sera el funcionamiento del menu.
 
-print("Bienvenido al registro de temperaturas")
-print()
-print("!RT!: Registrar temperatura semanal")
-print("!MJ!: Consultar temperatura media")
-print("!DF!: Consultar diferencia maxima")
-print("!FI!: Salir del programa")
-print()
-eleccion = str(input("Por favor selecciona una opcion >> "))
+while True:
 
-if eleccion == RT: # Contenido de la opcion 1
+    print("Bienvenido al registro de temperaturas")
+    print()
+    print("!RT!: Registrar temperatura semanal")
+    print("!MJ!: Consultar temperatura media")
+    print("!DF!: Consultar diferencia maxima")
+    print("!FI!: Salir del programa")
+    print()
 
-if eleccion == MJ: # Contenido de la opcion 2
+    eleccion = str(input("Por favor selecciona una opcion >> "))
+    eleccion = eleccion.lower() # Converitmos el string dado por el user a minusculas para que no sea keysensitive
 
-if eleccion == DF: # Contenido de la opcion 3 
+    if eleccion == "rt": # Contenido de la opcion 1
+        print("Opcion seleccionada: RT")
 
-if eleccion == FI: # Contenido de la opcion 4
+    elif eleccion == "mj": # Contenido de la opcion 2
+        print("Opcion seleccionada: MJ")
+
+    elif eleccion == "df": # Contenido de la opcion 3 
+        print("Opcion seleccionada: DF")
+
+    elif eleccion == "fi": # Contenido de la opcion 4
+        print("Opcion seleccionada: FI")
+        
+    else:
+        print("Opcion no valida, por favor seleccione una opcion valida.")
+        
+    print(eleccion)
